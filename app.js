@@ -14,7 +14,7 @@ if(!program.output || (!program.file && !program.folder)) {
 }
 
 if(program.file){
-    console.log(program.file);
+
 }
 else if(program.folder){
 
