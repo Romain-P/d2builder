@@ -1,22 +1,17 @@
 var pjson = require('./package.json'),
     enumCvt = require('./lib/converters/enum.js'),
+    path = require('path'),
     program = require('commander');
 
 program
   .version(pjson.version)
-  .usage('[-f <path> | -F <path>] -o <path>')
-  .option('-f, --file <path>', 'file path')
-  .option('-F, --folder <path>', 'folder path')
+  .usage('-s <path> -o <path>')
+  .option('-s, --src <path>', 'directory path')
   .option('-o, --output <path>', 'output path')
   .parse(process.argv);
 
-if(!program.output || (!program.file && !program.folder)) {
+if(!program.output || !program.src) {
     program.outputHelp();
 }
 
-if(program.file){
-    enumCvt.writeFile(program.file, program.output);
-}
-else if(program.folder){
-
-}
+enumCvt.writeFiles(path.join(program.src, 'enums'), program.output);
