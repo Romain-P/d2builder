@@ -14,7 +14,7 @@ if(!process.argv.slice(2).length) {
 }
 
 if(program.file){
-
+    console.log(program.file);
 }
 else if(program.folder){
 
