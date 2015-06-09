@@ -1,4 +1,5 @@
 var pjson = require('./package.json'),
+    enumCvt = require('./lib/converters/enum.js'),
     program = require('commander');
 
 program
@@ -14,7 +15,7 @@ if(!program.output || (!program.file && !program.folder)) {
 }
 
 if(program.file){
-
+    enumCvt.writeFile(program.file, program.output);
 }
 else if(program.folder){
 
