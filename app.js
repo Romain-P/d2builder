@@ -9,7 +9,7 @@ program
   .option('-o, --output <path>', 'output path')
   .parse(process.argv);
 
-if(!process.argv.slice(2).length) {
+if(!program.output || (!program.file && !program.folder)) {
     program.outputHelp();
 }
 
