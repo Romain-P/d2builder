@@ -26,6 +26,8 @@
     "commander": "^2.8.1",
     "fs-extra": "^0.18.4",
     "glob": "^5.0.10",
-    "js-beautify": "^1.5.6"
+    "js-beautify": "^1.5.6",
+    "syntax-error": "^1.1.4",
+    "underscore": "^1.8.3"
   }
 }
