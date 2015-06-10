@@ -16,6 +16,8 @@ if(!program.output || !program.src) {
     program.outputHelp();
 }
 
-//enumCvt.writeFiles(path.join(program.src, 'enums'), path.join(program.output, 'enums'));
-//typeCvt.writeFiles(path.join(program.src, 'types'), path.join(program.output, 'types'));
+enumCvt.writeFiles(path.join(program.src, 'enums'), path.join(program.output, 'enums'));
+enumCvt.writeFile(path.join(program.src, 'Metadata.as'), path.join(program.output, 'Metadata.js'));
+enumCvt.writeFile(path.join(program.src, 'ProtocolConstantsEnum.as'), path.join(program.output, 'ProtocolConstantsEnum.js'));
+typeCvt.writeFiles(path.join(program.src, 'types'), path.join(program.output, 'types'));
 messageCvt.writeFiles(path.join(program.src, 'messages'), path.join(program.output, 'messages'));
