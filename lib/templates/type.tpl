@@ -1,14 +1,14 @@
 var _classname_ = function () {
-  [vars]
+  _vars_
 };
 
 _classname_.prototype.serialize = function (output) {
-  [serialize]
+  _serialize_
 };
 
 _classname_.prototype.deserialize = function (input) {
-  [deserialize]
+  _deserialize_
 };
 
-module.exports.id = [id];
-module.exports.create = new [classname]();
+module.exports.id = _id_;
+module.exports.create = new _classname_();
