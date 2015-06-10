@@ -1,5 +1,6 @@
 var pjson = require('./package.json'),
     enumCvt = require('./lib/converters/enum.js'),
+    typeCvt = require('./lib/converters/type.js'),
     path = require('path'),
     program = require('commander');
 
@@ -14,4 +15,5 @@ if(!program.output || !program.src) {
     program.outputHelp();
 }
 
-enumCvt.writeFiles(path.join(program.src, 'enums'), program.output);
+//enumCvt.writeFiles(path.join(program.src, 'enums'), program.output);
+typeCvt.writeFiles(path.join(program.src, 'types'), program.output);
