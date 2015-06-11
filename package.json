@@ -1,14 +1,14 @@
 {
-  "name": "d2com",
+  "name": "d2builder",
   "version": "1.2.0",
-  "description": "d2com is a common lib to use dofus 2.0 protocol",
+  "description": "Build dofus network protocol in javascript from source.",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Snapizz/d2com.git"
+    "url": "git+https://github.com/Snapizz/d2builder.git"
   },
   "keywords": [
     "dofus",
@@ -19,9 +19,9 @@
   "author": "Snapiz",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Snapizz/d2com/issues"
+    "url": "https://github.com/Snapizz/d2builder/issues"
   },
-  "homepage": "https://github.com/Snapizz/d2com#readme",
+  "homepage": "https://github.com/Snapizz/d2builder#readme",
   "dependencies": {
     "commander": "^2.8.1",
     "fs-extra": "^0.18.4",
