@@ -1,14 +1,14 @@
 {
-  "name": "dofus-tool",
+  "name": "d2com",
   "version": "1.2.0",
-  "description": "Dofus tool is protocol builder for dofus 2.0",
+  "description": "d2com is a common lib to use dofus 2.0 protocol",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Snapizz/dofus-tool.git"
+    "url": "git+https://github.com/Snapizz/d2com.git"
   },
   "keywords": [
     "dofus",
@@ -19,9 +19,9 @@
   "author": "Snapiz",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Snapizz/dofus-tool/issues"
+    "url": "https://github.com/Snapizz/d2com/issues"
   },
-  "homepage": "https://github.com/Snapizz/dofus-tool#readme",
+  "homepage": "https://github.com/Snapizz/d2com#readme",
   "dependencies": {
     "commander": "^2.8.1",
     "fs-extra": "^0.18.4",
