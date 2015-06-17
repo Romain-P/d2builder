@@ -22,7 +22,7 @@ _classname_.prototype.getMessageId = function () {
 };
 
 _classname_.prototype.getClassName = function () {
-  return _classname_;
+  return '_classname_';
 };
 
 module.exports.id = _id_;
