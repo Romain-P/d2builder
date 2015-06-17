@@ -9,22 +9,16 @@ var _classname_ = function () {
 
 util.inherits(_classname_, NetworkMessage);
 
-_classname_.prototype.pack = function (output) {
-  var data = new Buffer(32);
-  this.serialize(new CustomDataWrapper(data));
-  this.writePacket(output, _id_, data);
-};
-
-_classname_.prototype.unpack = function (intput, len) {
-  this.deserialize(intput);
-};
-
 _classname_.prototype.serialize = function (output) {
   _serialize_
 };
 
 _classname_.prototype.deserialize = function (input) {
   _deserialize_
+};
+
+_classname_.prototype.getMessageId = function () {
+  return _id_;
 };
 
 module.exports.id = _id_;
