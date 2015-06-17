@@ -15,4 +15,4 @@ _classname_.prototype.getTypeId = function () {
 };
 
 module.exports.id = _id_;
-module.exports.create = new _classname_();
+module.exports.class = _classname_;
