@@ -1,5 +1,5 @@
 var d2com = require('d2com'),
-    NetworkMessage = d2com.networkMessage,
+    BaseMessage = d2com.networkMessage,
     CustomDataWrapper = d2com.customDataWrapper,
     util = require('util');
 
@@ -7,7 +7,7 @@ var _classname_ = function () {
   _vars_
 };
 
-util.inherits(_classname_, NetworkMessage);
+util.inherits(_classname_, BaseMessage);
 
 _classname_.prototype.serialize = function (output) {
   _serialize_
