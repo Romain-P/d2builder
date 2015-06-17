@@ -21,5 +21,9 @@ _classname_.prototype.getMessageId = function () {
   return _id_;
 };
 
+_classname_.prototype.getClassName = function () {
+  return _classname_;
+};
+
 module.exports.id = _id_;
 module.exports.class = _classname_;
