@@ -1,6 +1,11 @@
+var BaseMessage = require('_dir_').class,
+    util = require('util');
+
 var _classname_ = function () {
   _vars_
 };
+
+util.inherits(_classname_, BaseMessage);
 
 _classname_.prototype.serialize = function (output) {
   _serialize_
