@@ -1,5 +1,5 @@
 var d2com = require('d2com'),
-    BaseMessage = d2com.networkMessage,
+    BaseMessage = d2com.networkMessage.class,
     CustomDataWrapper = d2com.customDataWrapper,
     util = require('util');
 
