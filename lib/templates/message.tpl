@@ -3,6 +3,8 @@ var d2com = require('d2com'),
     CustomDataWrapper = d2com.customDataWrapper,
     util = require('util');
 
+_deps_
+
 var _classname_ = function () {
   _vars_
 };
