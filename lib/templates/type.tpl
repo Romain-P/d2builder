@@ -8,10 +8,18 @@ var _classname_ = function () {
 util.inherits(_classname_, BaseMessage);
 
 _classname_.prototype.serialize = function (output) {
-  _serialize_
+  this.serializeAs__classname_(output);
 };
 
 _classname_.prototype.deserialize = function (input) {
+  this.deserializeAs__classname_(input);
+};
+
+_classname_.prototype.serializeAs__classname_ = function (output) {
+  _serialize_
+};
+
+_classname_.prototype.deserializeAs__classname_ = function (input) {
   _deserialize_
 };
 
