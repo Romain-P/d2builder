@@ -4,6 +4,7 @@ var pjson = require('./package.json'),
     typeCvt = require('./lib/converters/type.js'),
     messageCvt = require('./lib/converters/message.js'),
     path = require('path'),
+    fs = require('fs-extra'),
     program = require('commander');
 
 program
@@ -22,3 +23,5 @@ enumCvt.writeFile(path.join(program.src, constants.src.metadata), path.join(prog
 enumCvt.writeFile(path.join(program.src, constants.src.protocolConstants), path.join(program.output, constants.output.protocolConstants));
 typeCvt.writeFiles(path.join(program.src, constants.src.type), path.join(program.output, constants.output.type));
 messageCvt.writeFiles(path.join(program.src, constants.src.message), path.join(program.output, constants.output.message));
+fs.copySync(path.join(__dirname, constants.src.protocolTypeManager), path.join(program.output, constants.output.protocolTypeManager));
+fs.copySync(path.join(__dirname, constants.src.messageReceiver), path.join(program.output, constants.output.messageReceiver));
