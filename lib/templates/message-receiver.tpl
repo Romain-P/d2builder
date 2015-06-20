@@ -126,7 +126,7 @@ MessageReceiver.prototype.create = function (messageId) {
     deferred.reject('Unknown packet received (ID ' + messageId + ')');
   }
   else{
-    deferred.resolve(new Message());
+    deferred.resolve(new Message.class());
   }
 
   return deferred.promise;
