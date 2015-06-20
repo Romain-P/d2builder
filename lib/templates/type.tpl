@@ -33,3 +33,6 @@ _classname_.prototype.getClassName = function () {
 
 module.exports.id = _id_;
 module.exports.class = _classname_;
+module.exports.getInstance = function(){
+  return new _classname_();
+};
