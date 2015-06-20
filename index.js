@@ -27,6 +27,6 @@ fs.copySync(path.join(__dirname, constants.src.protocolTypeManager), path.join(p
 fs.copySync(path.join(__dirname, constants.src.messageReceiver), path.join(program.output, constants.output.messageReceiver));*/
 
 var reader = require('./lib/as-reader.js');
-var asClass = reader.read('/home/snapiz/Bureau/src/dofus/network/messages/connection/IdentificationMessage.as');
+var asClass = reader('/home/snapiz/Bureau/src/dofus/network/messages/connection/IdentificationMessage.as');
 
-console.log(asClass.properties);
+console.log(asClass.constants);
