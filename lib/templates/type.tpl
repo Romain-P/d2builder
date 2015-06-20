@@ -15,11 +15,11 @@ _classname_.prototype.deserialize = function (input) {
   this.deserializeAs__classname_(input);
 };
 
-_classname_.prototype.serializeAs__classname_ = function (output) {
+_classname_.prototype.serializeAs__classname_ = function (param1) {
   _serialize_
 };
 
-_classname_.prototype.deserializeAs__classname_ = function (input) {
+_classname_.prototype.deserializeAs__classname_ = function (param1) {
   _deserialize_
 };
 
