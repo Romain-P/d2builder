@@ -1,6 +1,6 @@
 {
   "name": "d2builder",
-  "version": "1.5.4",
+  "version": "1.5.5",
   "description": "Build dofus network protocol in javascript from source.",
   "main": "app.js",
   "scripts": {
@@ -24,6 +24,7 @@
   "homepage": "https://github.com/Snapizz/d2builder#readme",
   "dependencies": {
     "commander": "^2.8.1",
+    "diff": "^1.4.0",
     "fs-extra": "^0.18.4",
     "glob": "^5.0.10",
     "js-beautify": "^1.5.6",
