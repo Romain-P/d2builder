@@ -29,4 +29,4 @@ fs.copySync(path.join(__dirname, constants.src.messageReceiver), path.join(progr
 var reader = require('./lib/as-reader.js');
 var asClass = reader('/home/snapiz/Bureau/src/dofus/network/messages/connection/IdentificationMessage.as');
 
-console.log(asClass.constants);
+console.log(asClass.functions);
