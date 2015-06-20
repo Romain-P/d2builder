@@ -10,7 +10,10 @@ var MessageReceiver = function () {
   self = this;
 }
 
-module.exports = MessageReceiver;
+module.exports = {
+  class: MessageReceiver,
+  instance: new MessageReceiver()
+};
 
 MessageReceiver.prototype.parse = function parse(input, messageId, messageLength) {
   var deferred = Q.defer();
@@ -47,7 +50,7 @@ function parseHeader (src, splittedPacket, staticHeader, messageId, messageLengt
       if(src.bytesAvailable < 2){
         throw new Error('Not enought data to read the header, byte available : ' + src.bytesAvailable + ' (needed : 2)');
       }
-      buf = new Buffer(32);
+      buf = new Buffer(32)
       staticHeader = src.readUnsignedShort();
       messageId = getMessageId(staticHeader);
       if(src.bytesAvailable < (staticHeader & NetworkMessage.BIT_MASK)){
@@ -123,7 +126,7 @@ MessageReceiver.prototype.create = function (messageId) {
     deferred.reject('Unknown packet received (ID ' + messageId + ')');
   }
   else{
-    deferred.resolve(new Message());
+    deferred.resolve(new Message.class());
   }
 
   return deferred.promise;
