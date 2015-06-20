@@ -7,7 +7,7 @@ var pjson = require('./package.json'),
     fs = require('fs-extra'),
     program = require('commander');
 
-/*program
+program
   .version(pjson.version)
   .usage('-s <path> -o <path>')
   .option('-s, --src <path>', 'directory path')
@@ -24,9 +24,4 @@ enumCvt.writeFile(path.join(program.src, constants.src.protocolConstants), path.
 typeCvt.writeFiles(path.join(program.src, constants.src.type), path.join(program.output, constants.output.type));
 messageCvt.writeFiles(path.join(program.src, constants.src.message), path.join(program.output, constants.output.message));
 fs.copySync(path.join(__dirname, constants.src.protocolTypeManager), path.join(program.output, constants.output.protocolTypeManager));
-fs.copySync(path.join(__dirname, constants.src.messageReceiver), path.join(program.output, constants.output.messageReceiver));*/
-
-var reader = require('./lib/as-reader.js');
-var asClass = reader('/home/snapiz/Bureau/src/dofus/network/messages/connection/IdentificationMessage.as');
-
-console.log(asClass.functions);
+fs.copySync(path.join(__dirname, constants.src.messageReceiver), path.join(program.output, constants.output.messageReceiver));
