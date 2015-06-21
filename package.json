@@ -1,10 +1,6 @@
 {
   "name": "d2builder",
-<<<<<<< HEAD
-  "version": "1.5.6",
-=======
   "version": "1.5.7",
->>>>>>> dev
   "description": "Build dofus network protocol in javascript from source.",
   "main": "index.js",
   "scripts": {
