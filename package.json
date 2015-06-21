@@ -1,8 +1,12 @@
 {
   "name": "d2builder",
+<<<<<<< HEAD
   "version": "1.5.6",
+=======
+  "version": "1.5.7",
+>>>>>>> dev
   "description": "Build dofus network protocol in javascript from source.",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
