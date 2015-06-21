@@ -1,43 +1,41 @@
 var d2com = require('d2com'),
-    BaseMessage = d2com.NetworkMessage.class,
     CustomDataWrapper = d2com.CustomDataWrapper,
-    BooleanByteWrapper = d2com.BooleanByteWrapper,
-    util = require('util');
+    BooleanByteWrapper = d2com.BooleanByteWrapper;
 
-_deps_
+<typeDeps>
 
-var _classname_ = function () {
-  _vars_
+var <classname> = function () {
+  <vars>
 };
 
-util.inherits(_classname_, BaseMessage);
+<superDep>
 
-_classname_.prototype.serialize = function (output) {
-  this.serializeAs__classname_(output);
+<classname>.prototype.serialize = function (output) {
+  this.serializeAs_<classname>(output);
 };
 
-_classname_.prototype.deserialize = function (input) {
-  this.deserializeAs__classname_(input);
+<classname>.prototype.deserialize = function (input) {
+  this.deserializeAs_<classname>(input);
 };
 
-_classname_.prototype.serializeAs__classname_ = function (param1) {
-  _serialize_
+<classname>.prototype.serializeAs_<classname> = function (param1) {
+  <serialize>
 };
 
-_classname_.prototype.deserializeAs__classname_ = function (param1) {
-  _deserialize_
+<classname>.prototype.deserializeAs_<classname> = function (param1) {
+  <deserialize>
 };
 
-_classname_.prototype.getMessageId = function () {
-  return _id_;
+<classname>.prototype.getMessageId = function () {
+  return <id>;
 };
 
-_classname_.prototype.getClassName = function () {
-  return '_classname_';
+<classname>.prototype.getClassName = function () {
+  return '<classname>';
 };
 
-module.exports.id = _id_;
-module.exports.class = _classname_;
+module.exports.id = <id>;
+module.exports.class = <classname>;
 module.exports.getInstance = function(){
-  return new _classname_();
+  return new <classname>;
 };
