@@ -1,3 +1,3 @@
 module.exports = {
-    [vars]
+    <vars>
 }
