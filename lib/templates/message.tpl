@@ -1,6 +1,6 @@
-var d2com = require('d2com'),
-    CustomDataWrapper = d2com.CustomDataWrapper,
-    BooleanByteWrapper = d2com.BooleanByteWrapper;
+var d2com = require('d2com');
+var CustomDataWrapper = d2com.CustomDataWrapper;
+var BooleanByteWrapper = d2com.BooleanByteWrapper;
 <typeDeps>
 
 var <classname> = function () {
@@ -8,6 +8,10 @@ var <classname> = function () {
 };
 
 <superDep>
+  
+module.exports = function () {
+  return new <classname>();
+};
 
 <classname>.prototype.serialize = function (output) {
   this.serializeAs_<classname>(output);
@@ -34,7 +38,4 @@ var <classname> = function () {
 };
 
 module.exports.id = <id>;
-module.exports.class = <classname>;
-module.exports.getInstance = function(){
-  return new <classname>;
-};
+module.exports.<classname> = <classname>;
