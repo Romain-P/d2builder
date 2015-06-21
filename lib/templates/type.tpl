@@ -3,6 +3,10 @@ var <classname> = function () {
 };
 
 <superDep>
+  
+module.exports = function () {
+  return new <classname>();
+};
 
 <classname>.prototype.serialize = function (output) {
   this.serializeAs_<classname>(output);
@@ -29,7 +33,4 @@ var <classname> = function () {
 };
 
 module.exports.id = <id>;
-module.exports.class = <classname>;
-module.exports.getInstance = function(){
-  return new <classname>;
-};
+module.exports.<classname> = <classname>;
