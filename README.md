@@ -1,3 +1,3 @@
-# d2com
+# d2builder
 
-d2com is a common lib to use dofus 2.0 protocol in javascript.
+protocol dofus 2.0 builder using js to output
